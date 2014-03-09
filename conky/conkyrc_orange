@@ -49,7 +49,7 @@ color2 AAAAAA
 color3 888888
 color4 EF5A29
 
-lua_load ~/Documents/conky/conky_orange.lua
+lua_load ~/Documents/scripts/conky/conky_orange.lua
 lua_draw_hook_post main
 
 #${voffset 35}
