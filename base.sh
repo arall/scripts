@@ -18,11 +18,13 @@ sudo apt-get install gnome-session-fallback
 #Compiz settings manager
 sudo apt-get install compiz-plugins compizconfig-settings-manager
 
-#Nvidia Optimus
-sudo apt-get install bbswitch-dkms bumblebee-nvidia
-
 #Essentials
-sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-mysql php5-curl mysql-server apache2 libapache2-mod-php5 htop pidgin wine chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois aircrack-ng gnome-tweak-tool skype indicator-multiload curl p7zip-full conky-all lm-sensors hddtemp build-essential libtool autotools-dev automake libconfig-dev ncurses-dev checkinstall check git libswscale-dev libsdl-dev libopenal-dev libopus-dev libvpx-dev yasm virtualbox spotify-client vlc
+sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-mysql php5-curl php5-json mysql-server apache2 libapache2-mod-php5 htop pidgin wine chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois gnome-tweak-tool skype curl p7zip-full conky-all build-essential libtool autotools-dev automake libconfig-dev ncurses-dev checkinstall check git libswscale-dev libsdl-dev libopenal-dev libopus-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr
+
+#Apache
+sudo a2dismod autoindex
+sudo a2enmod rewrite
+sudo service apache2 restart
 
 #Virtualbox permissions
 sudo adduser me vboxusers
