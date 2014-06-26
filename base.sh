@@ -19,11 +19,24 @@ sudo apt-get install gnome-session-fallback
 sudo apt-get install compiz-plugins compizconfig-settings-manager
 
 #Essentials
-sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-mysql php5-curl php5-json mysql-server apache2 libapache2-mod-php5 htop pidgin wine chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois gnome-tweak-tool skype curl p7zip-full conky-all build-essential libtool autotools-dev automake libconfig-dev ncurses-dev checkinstall check git libswscale-dev libsdl-dev libopenal-dev libopus-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr
+sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mysql-server php-pear apache2 libapache2-mod-php5 htop pidgin wine chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois gnome-tweak-tool skype curl p7zip-full conky-all build-essential libtool autotools-dev automake libconfig-dev ncurses-dev checkinstall check git libswscale-dev libsdl-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr unrar
+
+#PHP Depend
+sudo pear channel-discover pear.pdepend.org
+#PHP Code Sniffer
+sudo pear install PHP_CodeSniffer
+#PHP Mess Detector
+sudo pear channel-discover pear.phpmd.org
+sudo pear install phpmd/PHP_PMD-1.5.0
+#PHP CS Fixer
+sudo curl http://get.sensiolabs.org/php-cs-fixer.phar -o /usr/local/bin/php-cs-fixer
+sudo chmod a+x /usr/local/bin/php-cs-fixer
 
 #Apache
 sudo a2dismod autoindex
 sudo a2enmod rewrite
+sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/mods-available
+sudo php5enmod mcrypt
 sudo service apache2 restart
 
 #Virtualbox permissions
