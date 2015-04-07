@@ -91,7 +91,6 @@
     //     "--level": "all"
     // }
     "php_cs_fixer_additional_args": {
-        "--level": "all",
         "--fixers": "-psr0,-visibility"
     },
 
