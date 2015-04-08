@@ -20,10 +20,20 @@ sudo apt-get install gnome-session-fallback
 sudo apt-get install compiz-plugins compizconfig-settings-manager gnome-tweak-tool
 
 # Essentials
-sudo apt-get install htop android-tools* pidgin wine gparted ffmpeg chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois curl p7zip-full conky build-essential libtool autotools-dev automake libconfig-dev libncurses5-dev checkinstall check git libswscale-dev libsdl1.2-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr unrar zsh nodejs npm fluxgui
+sudo apt-get install htop android-tools* pidgin wine gparted ffmpeg chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois curl p7zip-full conky build-essential libtool autotools-dev automake libconfig-dev libncurses5-dev checkinstall check git libswscale-dev libsdl1.2-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr unrar zsh nodejs npm
 
 # WebDev
-sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php-mysqlnd mongodb-server php-pear apache2 libapache2-mod-php5
+sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php5-mysqlnd mongodb-server php-pear apache2 libapache2-mod-php5
+
+# Numix Theme
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+
+# F.lux
+sudo apt-get install python-glade2 python-appindicator
+git clone https://github.com/Kilian/f.lux-indicator-applet.git
+cd f.lux-indicator-applet
+chmod +x setup.py
+sudo ./setup.py install
 
 # Uninstall default apps
 sudo apt-get remove empathy empathy-common webbrowser-app evolution
@@ -43,9 +53,9 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/bin/composer
 
 # Grunt
-npm install -g grunt-cli
+sudo npm install -g grunt-cli
 # Bower
-npm install -g bower
+sudo npm install -g bower
 
 # Apache
 sudo a2dismod autoindex
@@ -57,9 +67,6 @@ sudo service apache2 restart
 
 # Virtualbox permissions
 sudo adduser me vboxusers
-
-# Numix Theme
-sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-saucy
 
 # Oh My zsh
 curl -L http://install.ohmyz.sh | sh
