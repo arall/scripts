@@ -25,7 +25,7 @@ sudo apt-get install compiz-plugins compizconfig-settings-manager gnome-tweak-to
 sudo apt-get install htop android-tools* screenstudio pidgin wine gparted ffmpeg chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois curl p7zip-full conky build-essential libtool autotools-dev automake libconfig-dev libncurses5-dev checkinstall check git libswscale-dev libsdl1.2-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr unrar zsh nodejs npm
 
 # WebDev
-sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php5-mysqlnd mongodb-server php-pear apache2 libapache2-mod-php5
+sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php5-mysqlnd mongodb php5-mongo php-pear apache2 libapache2-mod-php5
 
 # Numix Theme
 sudo apt-get install numix-gtk-theme numix-icon-theme-circle
