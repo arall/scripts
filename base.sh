@@ -2,11 +2,9 @@
 
 # Spotify
 sudo add-apt-repository "deb http://repository.spotify.com stable non-free "
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 # Numix Theme
 sudo add-apt-repository ppa:numix/ppa
-# f.lux
-sudo add-apt-repository ppa:kilian/f.lux
 # ffmpeg
 sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
 # ScreenStudio
@@ -22,10 +20,22 @@ sudo apt-get install gnome-session-fallback
 sudo apt-get install compiz-plugins compizconfig-settings-manager gnome-tweak-tool
 
 # Essentials
-sudo apt-get install htop android-tools* screenstudio pidgin wine gparted ffmpeg chromium-browser filezilla python2.7-dev git network-manager-openvpn nmap whois curl p7zip-full conky build-essential libtool autotools-dev automake libconfig-dev libncurses5-dev checkinstall check git libswscale-dev libsdl1.2-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm virtualbox spotify-client vlc pidgin-otr unrar zsh nodejs npm
+sudo apt-get install htop curl p7zip-full build-essential libtool autotools-dev automake libconfig-dev libncurses5-dev checkinstall check libswscale-dev libsdl1.2-dev libopenal-dev libopus-dev libssl-dev libvpx-dev yasm unrar
+
+# Personal
+sudo apt-get install zsh chromium-browser pidgin pidgin-otr conky gparted screenstudio wine virtualbox spotify-client vlc ffmpeg
+
+# Netsec
+sudo apt-get install nmap whois aircrack-ng netcat john
+
+# Anti-surveillance
+sudo apt-get install network-manager-openvpn
+
+# Dev
+sudo apt-get install git python2.7-dev
 
 # WebDev
-sudo apt-get install libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php5-mysqlnd mongodb php5-mongo php-pear apache2 libapache2-mod-php5
+sudo apt-get install filezilla libcurl4-gnutls-dev php5-common php5-cli php5-gd php5-mcrypt php5-mysql php5-curl php5-json mariadb-server php5-mysqlnd mongodb php5-mongo php-pear apache2 libapache2-mod-php5 nodejs npm
 
 # Numix Theme
 sudo apt-get install numix-gtk-theme numix-icon-theme-circle
@@ -70,7 +80,7 @@ sudo service apache2 restart
 # Virtualbox permissions
 sudo adduser me vboxusers
 
-# Oh My zsh
+# Oh My ZSH
 curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
 
@@ -81,4 +91,3 @@ sudo mv screenfetch /usr/bin/
 
 # Privacy
 gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
-
