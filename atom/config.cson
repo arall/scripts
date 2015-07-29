@@ -1,0 +1,28 @@
+"*":
+  "exception-reporting":
+    userId: "a4d24493-d682-cab9-ec81-1d33befbb9e2"
+  welcome:
+    showOnStartup: false
+  "php-cs-fixer":
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    fixers: "concat_with_spaces, phpdoc_indent, phpdoc_params, phpdoc_scalar, phpdoc_short_description, return, -psr0"
+  core: {}
+  editor:
+    invisibles: {}
+    tabLength: 4
+    showIndentGuide: true
+  "linter-php": {}
+  "linter-phpmd":
+    rulesets: "codesize,unusedcode,naming"
+    executablePath: "/usr/bin/phpmd"
+  "spell-check": {}
+  "atom-autocomplete-php":
+    binComposer: "composer"
+  "save-session":
+    dataSaveFolder: "/Users/gerard/.atom/packages/save-session/projects"
+  minimap:
+    plugins:
+      "highlight-selected": true
+  "atom-terminal":
+    MacWinRunDirectly: true
+
